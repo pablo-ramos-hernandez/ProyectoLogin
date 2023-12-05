@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontStyle: 'italic',
         fontSize: 15,
-        backgroundColor: 'ligtblue'
+        backgroundColor: 'lightblue'
       },
       CentrarcodigoQR: {
         borderWidth: 1,

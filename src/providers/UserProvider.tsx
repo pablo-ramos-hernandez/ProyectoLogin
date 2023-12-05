@@ -1,7 +1,7 @@
 import { useState, createContext } from "react"
 import React from "react"
 
-export const UserContext = createContext()
+export const UserContext = createContext(undefined)
 /**
  * Creamos dos funciones que vamos a utilizar como hook
  */
@@ -13,11 +13,6 @@ export const UserProvider = ({children}) => {
 
   const login = () => {
     setIsLogin("true")
-  }
-
-  const outlogin = () => {
-    setUser(null)
-    setIsLogin("false")
   }
   return (
       <UserContext.Provider value={{user,setUser, isLogin, login}}>

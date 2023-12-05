@@ -10,8 +10,8 @@ const drawer = createDrawerNavigator()
 export function DraweNavigationFinal() {
     return (
         <NavigationContainer independent={true}>
-            <drawer.Navigator drawerContent={(props) => <MenuItems {... props}/>}>
-                <drawer.Screen name="Welcome" component={WelcomeSinButton} />
+            <drawer.Navigator screenOptions={{title: "Pablo Ramos PGL", headerStyle:{backgroundColor: "#A69CAC"}}} drawerContent={(props) => <MenuItems {... props}/>}>
+                <drawer.Screen name="WelcomeSinButton" component={WelcomeSinButton} />
                 <drawer.Screen name="TabNavigation" component={TabNavigation}/>
             </drawer.Navigator>
         </NavigationContainer>
@@ -24,7 +24,7 @@ const MenuItems = ({ navigation }) => {
 
             <MenuButtonItems
                 text="Welcome"
-                onPress={() => navigation.navigate("Welcome")}
+                onPress={() => navigation.navigate("WelcomeSinButton")}
                 image={"https://images.pexels.com/photos/3643925/pexels-photo-3643925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
             />
 

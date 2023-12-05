@@ -10,7 +10,7 @@ const drawer = createDrawerNavigator()
 
 export function DraweNavigation() {
     return (
-        <drawer.Navigator drawerContent={(props) => <MenuItems {...props} />} >
+        <drawer.Navigator screenOptions={{title: "Pablo Ramos PGL", headerStyle:{backgroundColor: "#A69CAC"}}} drawerContent={(props) => <MenuItems {...props} />} >
             <drawer.Screen name="Welcome" component={Welcome} />
             <drawer.Screen name="Login" component={Login} />
         </drawer.Navigator>

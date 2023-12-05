@@ -28,6 +28,7 @@ topContainer: {
     fontWeight: 'bold',
     textAlignVertical: 'center',
     fontSize: 30,
+    padding: 10,
     color: 'white',
   },
 
@@ -36,7 +37,8 @@ topContainer: {
     backgroundColor: 'lightgreen',
     justifyContent: 'space-around',
     alignItems: 'center',
-    alignSelf: 'stretch'
+    alignSelf: 'stretch',
+    padding: 5
   },
 })
 export default Header
